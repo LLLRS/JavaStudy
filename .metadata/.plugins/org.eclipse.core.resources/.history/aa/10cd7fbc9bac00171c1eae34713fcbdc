@@ -1,0 +1,10 @@
+package com.io.demo;
+
+public class FlieWriter {
+
+	public static void main(String[] args) {
+		//创建一个可以往文件中写入字符数据的字符输出流对象
+		
+	}
+
+}

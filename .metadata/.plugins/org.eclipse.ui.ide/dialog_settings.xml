@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\byrbt\黑马JAVAEE+hadoop大数据19期\01、毕向东java基础\Code\day24e"/>
+		<item value="E:\byrbt\黑马JAVAEE+hadoop大数据19期\01、毕向东java基础\Code\day23e"/>
+		<item value="E:\byrbt\黑马JAVAEE+hadoop大数据19期\01、毕向东java基础\Code\day22e"/>
+		<item value="E:\byrbt\黑马JAVAEE+hadoop大数据19期\01、毕向东java基础\Code\day21e"/>
+		<item value="E:\byrbt\黑马JAVAEE+hadoop大数据19期\01、毕向东java基础\Code\day28e"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="416" key="DIALOG_HEIGHT"/>
+		<item value="1836" key="DIALOG_X_ORIGIN"/>
+		<item value="173" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+</section>

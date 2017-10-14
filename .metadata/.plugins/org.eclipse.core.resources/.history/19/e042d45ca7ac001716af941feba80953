@@ -1,0 +1,28 @@
+package io.test;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class MoveflieTest {
+
+	public static void main(String[] args) throws IOException {
+		
+		FileReader fr = new FileReader("E:/JavaEclipse/JavaStuday/iomovetest.txt");
+		StringBuilder sb = new StringBuilder();
+		FileWriter fw = new FileWriter("./src/com/io/iomovetestnew.txt");
+		int ch = 0;
+		
+		while((ch=fr.read())!=-1){
+			sb.append((char)ch);
+			//System.out.println((char)ch);
+		}
+		
+		fw.write(sb.toString());	//¡Ÿ ±¥Ê¥¢
+
+		fw.close();
+		fr.close();
+	}
+
+}

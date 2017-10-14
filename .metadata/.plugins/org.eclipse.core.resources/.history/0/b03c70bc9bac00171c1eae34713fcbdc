@@ -1,0 +1,9 @@
+package com.io.demo;
+
+public class FlieWriter {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

@@ -1,0 +1,54 @@
+package io.test;
+
+import java.io.IOException;
+import java.io.Reader;
+
+/**
+ * 定义一个自己的readline方法
+ * */
+
+
+public class MyReadLineDemo extends Reader {
+	
+	private Reader r;
+	int[] buf = new int[1024];
+	//定义一个计数器用于记录缓冲区中的数据个数 当该数据减到0，就从源中继续获取数据到缓冲区中。
+	private int count = 0;
+	//定义一个指针用于操作这个数组中的元素。当操作到最后一个元素后，指针应该归零。	
+	private int pos = 0;
+	MyReadLineDemo(Reader r){		
+		this.r = r;
+	}
+	
+	public int MyRead()  {
+		
+		
+		
+		
+		return 0;
+	}
+	
+	public String MyReadLine()  {
+		
+		return "";
+	}
+	
+	public void Myclose() throws IOException {
+		
+		
+	}
+
+	@Override
+	public int read(char[] cbuf, int off, int len) throws IOException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void close() throws IOException {
+		r.close();		
+	}
+	
+	
+
+}
