@@ -5,6 +5,7 @@
 		<item value="400" key="height"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="deleteSubPackages"/>
 		<item value="false" key="qualifyReferences"/>
 		<item value="false" key="moveWizard.updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
@@ -13,5 +14,9 @@
 		<item value="816" key="DIALOG_WIDTH"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 		<item value="495" key="DIALOG_HEIGHT"/>
+	</section>
+	<section name="InferTypeArguments">
+		<item value="false" key="leaveUnconstrainedRaw"/>
+		<item value="false" key="assumeCloneReturnsSameType"/>
 	</section>
 </section>

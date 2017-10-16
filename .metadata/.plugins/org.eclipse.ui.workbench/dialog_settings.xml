@@ -23,5 +23,25 @@
 		</list>
 	</section>
 	<section name="ImportExportAction">
+		<item value="org.eclipse.jdt.internal.ui.jarpackager.JarPackageWizard" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\Administrator.PC-20160606ROXE\Desktop\com"/>
+			<item value="C:\Users\Administrator.PC-20160606ROXE\Desktop\cn"/>
+			<item value="C:\Users\Administrator.PC-20160606ROXE\Desktop"/>
+			<item value="C:\Users\Administrator.PC-20160606ROXE\Desktop\test"/>
+			<item value="C:\Users\Administrator.PC-20160606ROXE\Desktop\1111"/>
+		</list>
 	</section>
 </section>

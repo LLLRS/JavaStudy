@@ -11,4 +11,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+<fullyQualifiedTypeName name="util.VolumeHelper"/>
+<fullyQualifiedTypeName name="cn.compresss.Decompress"/>
 </qualifiedTypeNameHistroy>
