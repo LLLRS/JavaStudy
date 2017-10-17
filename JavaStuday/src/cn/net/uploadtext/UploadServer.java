@@ -21,15 +21,15 @@ public class UploadServer {
 		//1
 		ServerSocket ss = new ServerSocket(10005);
 		
-		//2,
+		//2
 		Socket s = ss.accept();
 		
 		System.out.println(s.getInetAddress().getHostAddress()+".....connected");
 		
-		//3,
+		//3
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(s.getInputStream()));
 		
-		//4,
+		//4
 		BufferedWriter bufw = new BufferedWriter(new FileWriter("c:\\server.txt"));
 		
 		String line = null;

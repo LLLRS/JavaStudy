@@ -15,7 +15,7 @@ public class IPDemo {
 		InetAddress ip = InetAddress.getLocalHost();
 		
 		//获取其他主机的ip地址对象。
-		ip = InetAddress.getByName("baidu.com");//PC-LLRS
+//		ip = InetAddress.getByName("baidu.com");//PC-LLRS 169.254.175.50
 	
 		System.out.println(ip.getHostAddress());
 		System.out.println(ip.getHostName());

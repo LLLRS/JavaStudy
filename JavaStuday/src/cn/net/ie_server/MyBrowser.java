@@ -15,13 +15,13 @@ public class MyBrowser {
 	 */
 	public static void main(String[] args) throws UnknownHostException, IOException {
 
-		Socket s = new Socket("192.168.1.100",8080);
+		Socket s = new Socket("169.254.175.50",8080);
 		
 		//模拟浏览器，给tomcat服务端发送符合http协议的请求消息。
 		PrintWriter out = new PrintWriter(s.getOutputStream(),true);
 		out.println("GET /myweb/1.html HTTP/1.1");
 		out.println("Accept: */*");
-		out.println("Host: 192.168.1.100:8080");
+		out.println("Host: 169.254.175.50:8080");
 		out.println("Connection: close");
 		out.println();
 		out.println();
@@ -37,7 +37,7 @@ public class MyBrowser {
 		
 		s.close();
 		
-		//http://192.168.1.100:8080/myweb/1.html
+		//http://169.254.175.50:8080/myweb/1.html
 	}
 
 }

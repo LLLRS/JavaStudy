@@ -21,7 +21,7 @@ Accept: */*
 Accept-Language: zh-cn,zu;q=0.5
 Accept-Encoding: gzip, deflate
 User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2)
-Host: 192.168.1.100:9090
+Host: 169.254.175.50:9090
 //Host: www.huyouni.com:9090
 Connection: Keep-Alive
 //空行
@@ -29,24 +29,17 @@ Connection: Keep-Alive
 
 
 
-
-
-
-
-
 //服务端发回应答消息。
 HTTP/1.1 200 OK   //应答行，http的协议版本   应答状态码   应答状态描述信息
-
-应答消息属性信息。 属性名：属性值
 Server: Apache-Coyote/1.1
-ETag: W/"199-1323480176984"
-Last-Modified: Sat, 10 Dec 2011 01:22:56 GMT
+Accept-Ranges: bytes
+ETag: W/"203-1508249554918"
+Last-Modified: Tue, 17 Oct 2017 14:12:34 GMT
 Content-Type: text/html
-Content-Length: 199
-Date: Fri, 11 May 2012 07:51:39 GMT
+Content-Length: 203
+Date: Tue, 17 Oct 2017 14:22:49 GMT
 Connection: close
-//空行
-//应答体。
+
 <html>
 	<head>
 		<title>这是我的网页</title>
@@ -58,6 +51,9 @@ Connection: close
 
 		<font size='5' color="red">这是一个tomcat服务器中的资源。是一个html网页。</font>
 	</body>
+
+
+</html>
 
 
 </html>
@@ -84,27 +80,3 @@ Connection: close
 		开发成本相对低，维护更为简单。
 	缺点：所有运算都要在服务端完成。
 	
-	
-		
-		
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

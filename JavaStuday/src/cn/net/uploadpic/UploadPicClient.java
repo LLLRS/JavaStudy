@@ -18,7 +18,7 @@ public class UploadPicClient {
 
 		
 		//1,创建客户端socket。
-		Socket s = new Socket("192.168.1.100",10006);
+		Socket s = new Socket("PC-LLRS",10006);
 		
 		//2,读取客户端要上传的图片文件。
 		FileInputStream fis = new FileInputStream("c:\\0.bmp");
@@ -40,7 +40,6 @@ public class UploadPicClient {
 		
 		//读取服务端发回的内容。 		
 		InputStream in  = s.getInputStream();
-		byte[] bufIn = new byte[1024];
 		
 		int lenIn = in.read(buf);
 		String text = new String(buf,0,lenIn);
@@ -49,9 +48,7 @@ public class UploadPicClient {
 		fis.close();
 		s.close();
 		
-		
-		
-		
+
 	}
 
 }

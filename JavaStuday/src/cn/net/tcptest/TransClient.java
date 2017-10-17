@@ -33,19 +33,19 @@ public class TransClient {
 		 * 3，将录入的信息发送给socket输出流。
 		 */
 		
-		//1,创建socket客户端对象。
-		Socket s = new Socket("192.168.1.100",10004);
+		//创建socket客户端对象。
+		Socket s = new Socket("PC-LLRS",10004);
 		
-		//2，获取键盘录入。
+		//获取键盘录入。
 		BufferedReader bufr  =
 				new BufferedReader(new InputStreamReader(System.in));
 		
-		//3,socket输出流。
+		//socket输出流。
 //		new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
 		PrintWriter out = new PrintWriter(s.getOutputStream(),true);
 		
 		
-		//4,socket输入流，读取服务端返回的大写数据
+		//socket输入流，读取服务端返回的大写数据
 		BufferedReader bufIn  = new BufferedReader(new InputStreamReader(s.getInputStream()));
 		
 		String line = null;

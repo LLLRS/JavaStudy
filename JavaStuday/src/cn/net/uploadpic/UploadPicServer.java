@@ -1,10 +1,7 @@
 package cn.net.uploadpic;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -20,12 +17,12 @@ public class UploadPicServer {
 		ServerSocket ss = new ServerSocket(10006);
 		
 		while(true){
-			Socket s = ss.accept();			
-			
+			Socket s = ss.accept();	//阻塞式		
+			//实现多个客户端上传，并发访问
 			new Thread(new UploadTask(s)).start();		
 			
 		}
-		//获取客户端。
+		
 		
 		
 //		ss.close();

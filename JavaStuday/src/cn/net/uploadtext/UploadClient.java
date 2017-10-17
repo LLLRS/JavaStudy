@@ -20,18 +20,17 @@ public class UploadClient {
 
 		System.out.println("上传客户端。。。。。。");
 		
-		File file = new File("c:\\client.txt");
+		File file = new File("c:\\mail.txt");
 		System.out.println(file.exists());
 		
 		
-		//1
-		Socket s = new Socket("192.168.1.100",10005);
+	
+		Socket s = new Socket("PC-LLRS",10005);
 		
-		//2
+
 		BufferedReader bufr =
 				new BufferedReader(new FileReader(file));
 		
-		//3,
 		PrintWriter out = new PrintWriter(s.getOutputStream(),true);
 		
 		
@@ -43,9 +42,9 @@ public class UploadClient {
 		
 		//告诉服务端，客户端写完了。
 		s.shutdownOutput();
-//		out.println("!@#$%^&*(");
+		out.println("!@#$%^&*(");
 		
-		//4,
+		
 		BufferedReader bufIn = new BufferedReader(new InputStreamReader(s.getInputStream()));
 		
 		String str = bufIn.readLine();

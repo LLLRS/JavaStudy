@@ -13,7 +13,7 @@ public class URLDemo {
 	 */
 	public static void main(String[] args) throws IOException {
 
-		String str_url = "http://192.168.1.100:8080/myweb/1.html";
+		String str_url = "www.baidu.com";
 		
 		URL url = new URL(str_url);
 		

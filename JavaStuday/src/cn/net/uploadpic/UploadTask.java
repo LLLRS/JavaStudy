@@ -29,7 +29,7 @@ public class UploadTask implements Runnable {
 		InputStream in = s.getInputStream();
 
 		// 将读取到数据存储到一个文件中。
-		File dir = new File("c:\\pic");
+		File dir = new File("c:\\aa11");
 		if (!dir.exists()) {
 			dir.mkdirs();
 		}
@@ -47,9 +47,7 @@ public class UploadTask implements Runnable {
 		int len = 0;
 
 		while ((len = in.read(buf)) != -1) {
-			
-			
-			
+
 			fos.write(buf, 0, len);
 			
 			if(file.length()>SIZE){
@@ -57,10 +55,8 @@ public class UploadTask implements Runnable {
 				
 				fos.close();
 				s.close();
-				
-				
+					
 				System.out.println(ip+"...."+file.delete());
-				
 				return ;
 			}
 		}
