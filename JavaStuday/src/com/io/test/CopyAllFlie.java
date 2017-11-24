@@ -14,7 +14,7 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.compresss.ZipRarUtil; 
+
 
 /*注意：一定要设置文件路径
  * 
@@ -60,7 +60,7 @@ public class CopyAllFlie {
 //		writePathFile(list,destFile);
 		
 		moveFile(list);
-		unRarFile(list);
+//		unRarFile(list);
 	}
 	
 	
@@ -141,14 +141,14 @@ public class CopyAllFlie {
 
 
 
-public static void unRarFile(List<File> list)throws Exception{
-		
-	for(File file : list){
-		
-		 ZipRarUtil.deCompress(file.getAbsolutePath(), DESTDIR_PATH);
-		}
-	
-	}
+//public static void unRarFile(List<File> list)throws Exception{
+//		
+//	for(File file : list){
+//		
+//		 ZipRarUtil.deCompress(file.getAbsolutePath(), DESTDIR_PATH);
+//		}
+//	
+//	}
 
 }
 
