@@ -16,6 +16,11 @@ public class StringTest2 {
 		}
 		System.out.println(t); 
 		//方法2：利用tCharArray();
+		
+		//方法#：Stringbufffer 
+		StringBuffer sb = new StringBuffer();
+		String ss = sb.append(s).reverse().toString();
+		System.out.println(ss);
 	}
 
 }

@@ -32,12 +32,8 @@ public class StringTest4 {
 					
 					return s1.substring(k,k+i);
 				}
-				
-			}
-			
-		}
-		
+			}	
+		}		
 		return null;
 	}
-
 }
