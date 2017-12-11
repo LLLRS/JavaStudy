@@ -18,8 +18,8 @@ public class ArrayPaixu {
 //		s = maopaoForString(s);
 //		System.out.println(s);
 		
-		int t = Zheban(arr,9);
-		System.out.println(t);
+//		int t = Zheban(arr,9);
+//		System.out.println(t);
 	
 	}
     //’€∞Î≤È’“
