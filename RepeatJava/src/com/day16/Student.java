@@ -1,6 +1,6 @@
 package com.day16;
 
-public class Student {
+public class Student implements Comparable<Student>{
 	private String name;
 	private int age;
 	public Student() {
@@ -34,6 +34,14 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", age=" + age + "]";
+	}
+	@Override
+	public int compareTo(Student o) {
+		//年龄长度 --> 姓名 --> 年龄
+		int temp1 = this.getName().length()-o.getName().length();
+		int temp2 = (temp1==0?this.getName().compareTo(o.getName()):temp1);
+		
+		return temp2==0?this.getAge()-o.getAge():temp2;
 	}
 	
 
