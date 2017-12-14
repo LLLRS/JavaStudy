@@ -1,4 +1,4 @@
-package com.day16;
+package com.day17;
 /*
  * LinkedList
 	请用LinkedList模拟栈数据结构的集合，并测试

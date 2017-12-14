@@ -1,4 +1,4 @@
-package com.day16;
+package com.day17;
 
 public class Student implements Comparable<Student>{
 	private String name;
