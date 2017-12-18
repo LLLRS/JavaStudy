@@ -1,5 +1,6 @@
 package com.leetcode;
 
+import java.math.BigInteger;
 
 /*
  * Given a 32-bit signed integer, reverse digits of an integer.
@@ -26,16 +27,11 @@ public class ReverseInteger {
 		System.out.println(reverse(t2));
 		System.out.println(reverse(t3));
 		//System.out.println(Integer.parseInt("9646324350"));
-		System.out.println(reverse(2147483641));
-		System.out.println(Integer.MAX_VALUE);
-
+		//System.out.println(reverse(2147483641));
+		//System.out.println(Integer.MAX_VALUE);
+		//System.out.println(myAtoi("9646324350"));
 	}
-	public static int revers(int x) {
-        
-		
-        
-        return 0;
-    }
+
 	//该方法可能会超出范围
 	public static int reverse(int x) {
 	        
@@ -54,10 +50,37 @@ public class ReverseInteger {
 	            StringBuilder sb = new StringBuilder(s);
 	             s = sb.reverse().toString();
 	        }
-	        
-	        return Integer.parseInt(s);
+	        System.out.println(s);
+	        return myAtoi(s);
 	    }
-	
+//	convert a string to an integer.
+	 public static int myAtoi(String str) {
+		 if (str == null || str.length() == 0)
+				return 0;//
+			str = str.trim();
+			char firstChar = str.charAt(0);
+			int sign = 1, start = 0, len = str.length();
+			long sum = 0;
+			if (firstChar == '+') {
+				sign = 1;
+				start++;
+			} else if (firstChar == '-') {
+				sign = -1;
+				start++;
+			}
+			for (int i = start; i < len; i++) {
+				if (!Character.isDigit(str.charAt(i)))
+					return (int) sum * sign;
+				sum = sum * 10 + str.charAt(i) - '0';
+				if (sign == 1 && sum > Integer.MAX_VALUE)
+					return Integer.MAX_VALUE;
+				if (sign == -1 && (-1) * sum < Integer.MIN_VALUE)
+					return Integer.MIN_VALUE;
+			}
+
+			return (int) sum * sign;
+	        
+	    }
 //	 public static int reverse(int x)
 //	    {
 //	        int result = 0;
@@ -74,4 +97,5 @@ public class ReverseInteger {
 //
 //	        return result;
 //	    }
+	
 }

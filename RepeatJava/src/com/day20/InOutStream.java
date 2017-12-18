@@ -1,0 +1,40 @@
+package com.day20;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+/*
+ * InpuStream与OutStream读写文件的标准写法
+ * 		以复制一个文件为例
+ */
+
+public class InOutStream {
+
+	public static void main(String[] args) throws IOException  {
+		//与文件关联
+		FileInputStream fis = new FileInputStream("a.txt");
+		FileOutputStream fos = new FileOutputStream("b.txt");
+		
+		//读写文件
+		//第一种方式：一个字节读写
+		int ch = 0;
+		while((ch=fis.read())!=-1){
+			fos.write(ch);
+		}
+
+		//第二种方式：利用字符数组读写，效率高
+		byte[] arr = new byte[1024]; //1M空间
+		int len = 0;
+		while((len=fis.read(arr))!=-1){
+			fos.write(arr, 0, len);
+		}
+		//注意：两种方式只能选其一，在本例中，第一次读写都已经完成了文件的复制
+		
+		//关流
+		 fos.close();
+		 fis.close();
+	}
+
+}
